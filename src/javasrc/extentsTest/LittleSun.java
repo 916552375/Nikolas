@@ -1,4 +1,4 @@
-package javasrc;
+package javasrc.extentsTest;
 
 /**
  * @Author:zdd

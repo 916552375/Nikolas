@@ -1,7 +1,14 @@
 package javasrc;
 
+import javasrc.extentsTest.LittleSun;
+import javasrc.interfaceTest.EatFruit;
+import javasrc.interfaceTest.IFruit;
+
 public class TestDemo{
-	public static void main(String args[]){
-		System.out.println("你好，尼古拉斯张豆豆！");
-	}
+	public static void main(String args[]) throws Exception{
+	    LittleSun lSun =(LittleSun) Class.forName("javasrc.extentsTest.LittleSun").newInstance();
+	    lSun.hobby();
+	    IFruit iFruit= (EatFruit) Class.forName("javasrc.interfaceTest.EatFruit").newInstance();
+	    iFruit.eat();
+    }
 }

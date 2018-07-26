@@ -14,7 +14,7 @@ import java.sql.ResultSet;
 public class DbUtils {
 
     private  String url = "jdbc:mysql://localhost:3306/test?useSSL=false";
-    private  String user = "zdd";
+    private  String user = "root";
     private  String pwd = "admin123.";
     private  Connection conn = null;
 
@@ -64,7 +64,7 @@ public class DbUtils {
     }
 
     public static void main(String args[]) {
-        String sql = "select * from courses where name = 'bat'";
+        String sql = "select * from person";
         String name = null;
         String cls = null;
         PreparedStatement stmt = null;
@@ -80,10 +80,12 @@ public class DbUtils {
 
         ResultSet rs =stmt.executeQuery(sql);
             System.out.println("查询结果如下:");
-            System.out.println("name------class------descrption");
+            System.out.println("序号：\t\t姓名：\t\t爱好：\t\t描述：\t\t");
             while(rs.next()){
-                System.out.println(rs.getString("name")+"\t\t"+rs.getString("class")+"\t"+rs.getString("description"));
+                System.out.println(rs.getInt("id")+"\t\t\t"+rs.getString("name")+"\t\t\t"+rs.getString("hobby")+"\t\t"+rs.getString("description"));
             }
+            rs.close();
+            stmt.close();
         }catch(SQLException e){
             e.printStackTrace();
         }
