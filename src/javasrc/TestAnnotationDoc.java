@@ -1,4 +1,4 @@
-package bjyjf.com;
+package javasrc;
 
 
 import java.lang.annotation.*;
