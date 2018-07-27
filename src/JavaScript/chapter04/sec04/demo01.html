@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript数组</title>
+</head>
+<body>
+<script type="text/javascript">
+	var arr=new Array();
+	var arr2=new Array(3);
+	arr[0]="jack";
+	arr[1]="marry";
+	arr[2]="tom";
+	arr[3]="lucy";
+	arr[4]="june";
+	
+	arr2[0]=2;
+	arr2[1]=1;
+	arr2[2]=5;
+	
+	for(var i=0;i<arr.length;i++){
+		document.write(arr[i]+"<br/>");
+	}
+	document.write("<hr/>");
+	var o;
+	for(o in arr2){
+		document.write(o+" "+arr2[o]+"<br/>");
+	}
+	document.write("<hr/>");
+	document.write("sort()"+arr.sort()+"<br/>");
+	document.write("sort()"+arr2.sort()+"<br/>");
+	document.write("<hr/>");
+	document.write("join()"+arr.join()+"<br/>");
+	document.write("join()"+arr2.join(".")+"<br/>");
+	document.write("<hr/>");
+	document.write("concat()"+arr.concat(arr2)+"<br/>");
+	document.write("<hr/>");
+	document.write("reverse()"+arr.reverse()+"<br/>");
+</script>
+</body>
+</html>
