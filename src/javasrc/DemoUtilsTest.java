@@ -20,13 +20,10 @@ public class DemoUtilsTest {
         try{
 
         Class.forName(driver);
-        }catch(ClassNotFoundException cs){
-            cs.printStackTrace();
-        }
-        try{
         conn=DriverManager.getConnection(url,userName,password);
         System.out.println("数据库连接成功！");
-
+        }catch(ClassNotFoundException cs){
+            cs.printStackTrace();
         }catch(SQLException sqle){
             sqle.printStackTrace();
         }
