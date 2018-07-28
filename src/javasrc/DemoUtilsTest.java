@@ -11,7 +11,7 @@ public class DemoUtilsTest {
 
     }
     private static String userName="root";
-    private static String password="admin123.";
+    private static String password="123456";
     private static String url="jdbc:mysql://192.168.1.152:3306/db_book?useSSL=false";
     private static String driver="com.mysql.jdbc.Driver";
     private static Connection conn = null ;

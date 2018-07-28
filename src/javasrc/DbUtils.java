@@ -15,7 +15,7 @@ public class DbUtils {
 
     private  String url = "jdbc:mysql://localhost:3306/test?useSSL=false";
     private  String user = "root";
-    private  String pwd = "admin123.";
+    private  String pwd = "123456";
     private  Connection conn = null;
 
     /**
