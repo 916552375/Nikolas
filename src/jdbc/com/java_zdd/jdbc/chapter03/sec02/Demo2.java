@@ -55,7 +55,7 @@ public class Demo2 {
            System.out.println("添加图书失败！");
        }*/
 //idea多行注释Ctrl+Shift+/
-        Book book = new Book("大话程序猿2",1024.0f,"牛皮哥2","据说写得很叼炸天2！","男",16);
+        Book book = new Book("大话程序猿3","牛皮哥","男",19.98f,"据说写得很叼炸天！",16);
         int result2 =addBook2(book);
         if(1 == result2){
             System.out.println("添加图书成功！");

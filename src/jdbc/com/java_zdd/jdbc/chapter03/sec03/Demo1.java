@@ -24,7 +24,7 @@ public class Demo1 {
     }
 
     public static void main(String[] args) throws Exception{
-        Book book = new Book(26,"神话程序猿大牛蛋",1024.0f,"大牛蛋","据说写得很叼炸天！","男",16);
+        Book book = new Book(26,"神话程序猿大牛蛋","牛蛋哥","男",1024.6f,"男",16);
    int result = updateBook(book);
         System.out.println(result);
     }

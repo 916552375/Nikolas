@@ -20,7 +20,7 @@ public class Demo1 {
     }
 
     public static void main(String[] args)throws Exception {
-        int result = deleteBook(24);
+        int result = deleteBook(28);
         if(1 ==result){
             System.out.println("删除图书成功！");
         }else{

@@ -1,36 +1,71 @@
 package jdbc.model;
 
+import java.io.File;
+
 public class Book {
     private int id;
     private String bookName;
-    private float price;
     private String author;
-    private String bookDesc;
     private String sex;
+    private float price;
+    private String bookDesc;
     private int bookTypeId;
-
+    private File context;
+    private File pic ;
     public Book() {
     }
 
-    public Book(String bookName, float price, String author, String bookDesc, String sex, int bookTypeId) {
-        this.bookName = bookName;
-        this.price = price;
-        this.author = author;
-        this.bookDesc = bookDesc;
-        this.sex = sex;
-        this.bookTypeId = bookTypeId;
-    }
-
-    public Book(int id, String bookName, float price, String author, String bookDesc, String sex, int bookTypeId) {
+    public Book(int id, String bookName, float price, String author) {
         this.id = id;
         this.bookName = bookName;
         this.price = price;
         this.author = author;
+    }
+    public Book(String bookName, String author, String sex, float price, File context) {
+        this.bookName = bookName;
+        this.price = price;
+        this.author = author;
+        this.sex = sex;
+        this.context = context;
+    }
+    public Book(String bookName, String author, String sex, float price, String bookDesc, int bookTypeId) {
+        this.bookName = bookName;
+        this.price = price;
+        this.author = author;
         this.bookDesc = bookDesc;
         this.sex = sex;
         this.bookTypeId = bookTypeId;
     }
+    public Book(int id, String bookName, String author,String sex, float price, String bookDesc, int bookTypeId) {
+        this.id = id;
+        this.bookName = bookName;
+        this.author = author;
+        this.sex = sex;
+        this.price = price;
+        this.bookDesc = bookDesc;
+        this.bookTypeId = bookTypeId;
+    }
+    public Book(String bookName, String author, String sex, float price, String bookDesc, int bookTypeId,File context) {
+        this.bookName = bookName;
+        this.author = author;
+        this.price = price;
+        this.sex = sex;
+        this.bookDesc = bookDesc;
+        this.bookTypeId = bookTypeId;
+        this.context = context;
+    }
 
+
+    public Book(String bookName, String author, String sex, float price, String bookDesc, int bookTypeId,File context,File pic) {
+        this.bookName = bookName;
+        this.author = author;
+        this.price = price;
+        this.sex = sex;
+        this.bookDesc = bookDesc;
+        this.bookTypeId = bookTypeId;
+        this.context = context;
+        this.pic = pic;
+    }
     public int getId() {
         return id;
     }
@@ -85,5 +120,31 @@ public class Book {
 
     public void setBookTypeId(int bookTypeId) {
         this.bookTypeId = bookTypeId;
+    }
+
+    public File getContext() {
+        return context;
+    }
+
+    public void setContext(File context) {
+        this.context = context;
+    }
+
+    public File getPic() {
+        return pic;
+    }
+
+    public void setPic(File pic) {
+        this.pic = pic;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + this.id +
+                ", bookName='" + this.bookName + '\'' +
+                ", author=" + this.author +
+                ", price='" + this.price + '\'' +"元"+
+                '}';
     }
 }
