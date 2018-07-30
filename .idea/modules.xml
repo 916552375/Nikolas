@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Nikolas.iml" filepath="$PROJECT_DIR$/.idea/Nikolas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JspServlet/JspServlet.iml" filepath="$PROJECT_DIR$/JspServlet/JspServlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nikolas.iml" filepath="$PROJECT_DIR$/Nikolas.iml" />
     </modules>
   </component>
 </project>
