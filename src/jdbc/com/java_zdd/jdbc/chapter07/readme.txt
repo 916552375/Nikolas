@@ -1,7 +1,0 @@
-第七章 CallbaleStatement
-第一节：CallableStatement接口的引入
-CallableStatement主要是调用数据库中的存储过程，Callable Statement是PreparedStatement接口的子接口，在使用
-CallableStatement时可以接收存储过程的返回值。
-第二节：使用CallableStatement接口调用存储过程
-void regitsterOutParemeterIndex(int parameter,int sqlType)
-    按顺序位置parameterIndex将OUT参数注册为JDBC类型sqlType。
